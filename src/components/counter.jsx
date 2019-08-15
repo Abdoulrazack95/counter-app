@@ -6,6 +6,10 @@ class Counter extends Component {
     console.log("prevState", prevState);
   }
 
+  componentWillUnmount() {
+    console.log("Our App will unmount");
+  }
+
   formatCount() {
     const { value } = this.props.counter;
     return value === 0 ? <h1>zero</h1> : value;
