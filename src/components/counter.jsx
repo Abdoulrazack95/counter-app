@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
+  componentDidUpdate(prevProps, prevState) {
+    console.log("prevProps", prevProps);
+    console.log("prevState", prevState);
+  }
+
   formatCount() {
     const { value } = this.props.counter;
     return value === 0 ? <h1>zero</h1> : value;

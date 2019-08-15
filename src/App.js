@@ -43,6 +43,7 @@ class App extends Component {
   componentDidMount() {
     console.log("Our App is Mounted");
   }
+
   render() {
     console.log("app is rendered");
     return (
